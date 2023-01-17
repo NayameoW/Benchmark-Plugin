@@ -29,10 +29,11 @@
     </extensions>
 
     <actions>
-        <action id="Benchmark" class="com.nayameow.benchbaseplugin.actions.HelloWorldAction" text="Hello World">
-            <add-to-group group-id="ToolsMenu" anchor="first">
-
-            </add-to-group>
+        <action id="com.nayameow.benchbaseplugin.actions.HelloWorldAction"
+                class="com.nayameow.benchbaseplugin.actions.HelloWorldAction"
+                text="Popup Dialog"
+                description="Action example">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
     </actions>
 
