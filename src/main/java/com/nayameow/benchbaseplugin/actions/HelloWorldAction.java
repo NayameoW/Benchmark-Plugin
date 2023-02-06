@@ -5,6 +5,7 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
+import com.nayameow.benchbaseplugin.Benchbase;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
@@ -21,8 +22,8 @@ public class HelloWorldAction extends AnAction {
     public void actionPerformed(@NotNull AnActionEvent event) {
         Messages.showInfoMessage("Hello world", "Info");
         Project currentProject = event.getProject();
-
         Runtime rt = Runtime.getRuntime();
+
         try {
             String cmd = null;
             if (isWindows()) cmd = "cmd.exe /c";
